@@ -1,0 +1,68 @@
+<% var data = { title: "Каталог продукции | АО НЗИВ", author: "Mathetes" }; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<!-- Page Content -->
+<div class="container wrapper">
+  <div class="row align-items-top my-5">
+    <div class="col-sm-12 col-lg-3 mediasize">
+      <%= _.template(require('./../includes/sidebar.html').default)(data) %>
+    </div>
+
+    <div class="col-sm-12 col-lg-9">
+      <h2 class="product__heading animate__animated animate__backInDown">
+        Каталог продукции
+      </h2>
+      <p>Гостиница «Уют» - один из лучших вариантов проживания, имеющихся в городе Искитиме. В гостинице 11 номеров (стандарт, полулюкс и люкс), круглосуточная стойка регистрации. В номерах: кабельное телевидение, бесплатный Wi-Fi, чайник и холодильник. Номер оснащен ванной (или душевой кабиной), имеются туалетно-косметическими принадлежностями. В гостинице есть кафе, режим работы с 9-00 до 22-00 ежедневно без перерыва на обед. К услугам посетителей банкетный зал на 15 персон, где можно провести деловую встречу, торжественные мероприятия и т.д.</p>
+      <div class="card card-block-main">
+        <a class="card-title" href="1bed.html">
+          <img
+            class="card-img-top"
+            src="../../img/icons/1bed.jpg"
+            alt="Одноместные номера"
+          />
+          <div class="card-body product-props">
+            <h5 class="card-title">Одноместные номера</h5>
+          </div>
+        </a>
+      </div>
+      <div class="card card-block-main">
+        <a class="card-title" href="2bed.html">
+          <img
+            class="card-img-top"
+            src="../../img/icons/2bed.jpg"
+            alt="Двухместные номера"
+          />
+          <div class="card-body product-props">
+            <h5 class="card-title">Двухместные номера</h5>
+          </div>
+        </a>
+      </div>
+      <div class="card card-block-main">
+        <a class="card-title" href="4bed.html">
+          <img
+            class="card-img-top"
+            src="../../img/icons/4bed.jpg"
+            alt="Четырехместные номера"
+          />
+          <div class="card-body product-props">
+            <h5 class="card-title">Четырехместные номера</h5>
+          </div>
+        </a>
+      </div>
+      <div class="card card-block-main">
+        <a class="card-title" href="halls.html">
+          <img
+            class="card-img-top"
+            src="../../img/icons/1room.jpg"
+            alt="Кафе и ресторан"
+          />
+          <div class="card-body product-props">
+            <h5 class="card-title">Ресторан и кафе</h5>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+  <%= _.template(require('./../includes/footer.html').default)(data) %>
+</div>

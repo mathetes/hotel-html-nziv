@@ -1,0 +1,30 @@
+<% var data = { title: "местный номер - Гостиница Уют | АО НЗИВ", author:
+"Mathetes" }; %> <%=
+_.template(require('./../includes/header.html').default)(data) %>
+
+<!-- Page Content -->
+<div class="container wrapper">
+  <div class="row align-items-top my-5">
+    <div class="col-sm-12 col-lg-3 mediasize">
+      <%= _.template(require('./../includes/sidebar.html').default)(data) %>
+    </div>
+
+    <div class="col-sm-12 col-lg-9 sidebar__block">
+      <h2 class="product__heading animate__animated animate__backInDown">
+        местный номер
+      </h2>
+      <div class="image__block animate__animated animate__backInLeft">
+        <%=
+        _.template(require('./../includes/1bed/1-2-slider.html').default)(data)
+        %>
+      </div>
+      <div class="caracters__block animate__animated animate__backInRight">
+        <h2 class="font-weight-light caracters__heading">
+          Условия проживания
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
